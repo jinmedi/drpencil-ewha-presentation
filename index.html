@@ -153,7 +153,7 @@ h2{font-size:clamp(32px,5.1vw,84px)}
 .quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .q{position:relative;padding:1.3em 1.3em 1.1em;border-radius:16px;background:var(--ink-2);border:1px solid var(--ink-3);display:grid;gap:.5em;align-content:start}
 .q::before{content:"“";position:absolute;top:-.25em;left:.6em;font-family:var(--font-display);font-size:3.5em;line-height:1;color:var(--pencil);opacity:.9}
-.q p{margin:0;font-size:1em;font-weight:500;padding-top:.6em}
+.q p{margin:0;font-size:clamp(20px,1.9vw,30px);font-weight:700;padding-top:.5em}
 .q span{font-family:var(--font-mono);font-size:.68em;letter-spacing:.1em;color:var(--teal)}
 .roi{margin-top:1.2em;padding:1.1em 1.4em;border-radius:16px;background:linear-gradient(100deg,rgba(255,210,63,.14),rgba(46,230,214,.08));border:1px solid rgba(255,210,63,.4)}
 .roi b{color:var(--pencil)}
@@ -181,7 +181,6 @@ h2{font-size:clamp(32px,5.1vw,84px)}
   .body > .side{order:-1}
   .pencil-art{height:150px}
   .quotes{grid-template-columns:1fr}
-  .q:nth-child(n+3){display:none}
   .stats{grid-template-columns:1fr 1fr}
   .close-grid{grid-template-columns:1fr}
   .sig{text-align:left}
@@ -211,7 +210,7 @@ h2{font-size:clamp(32px,5.1vw,84px)}
       <div class="title-wrap">
         <h1 class="in">의료진의 손을<br><span class="hl">자유롭게.</span></h1>
         <p class="sub in">AI 진료 기록 솔루션 <strong style="color:var(--paper);font-weight:700">닥터펜슬</strong>을 소개합니다.</p>
-        <p class="lead in">의사가 직접 만들고, 의사가 직접 고치는 솔루션. 오늘은 숫자 대신 이야기를 가져왔습니다.</p>
+        <p class="lead in">의사가 직접 만들고, 의사가 직접 고치는 솔루션.</p>
         <p class="in" style="margin:.4em 0 0;font-family:var(--font-mono);font-size:.78em;letter-spacing:.14em;color:var(--pencil)">(주)카이랩 대표 · 김종엽</p>
       </div>
       <div class="side pencil-art in" aria-hidden="true">
@@ -228,12 +227,11 @@ h2{font-size:clamp(32px,5.1vw,84px)}
     <div class="body">
       <div>
         <h2 class="in">업체가 말귀를<br>못 알아들어서,<br><span class="hl">제가 직접 만들었습니다.</span></h2>
-        <p class="lead in">처음엔 사서 쓰려고 했습니다. 기성복이 몸에 맞으면 그게 가장 저렴하죠. 하지만 마음에 드는 업체도, 솔루션도 없었습니다. 결국 가장 비싼 길인 <strong>자체개발</strong>을 택했고, 팔자에 없는 스타트업 대표가 됐습니다.</p>
       </div>
       <div class="side ladder">
         <div class="rung in"><span class="tag">OPTION A</span><span class="name">기성복<small>시중 솔루션 구매</small></span><span class="bar"><i></i></span></div>
         <div class="rung in"><span class="tag">OPTION B</span><span class="name">맞춤복<small>업체 커스터마이징</small></span><span class="bar"><i></i></span></div>
-        <div class="rung pick in"><span class="tag">OPTION C · 선택</span><span class="name">자체개발<small>가장 비싸고, 가장 눈물났던 길</small></span><span class="bar"><i></i></span></div>
+        <div class="rung pick in"><span class="tag">OPTION C · 선택</span><span class="name">자체개발<small>가장 비싼 길</small></span><span class="bar"><i></i></span></div>
       </div>
     </div>
     <div class="foot"><span class="brand">DR. PENCIL</span><span class="co"><img src="assets/logo_kailab_white.png" alt="Kailab"><span>(주)카이랩</span></span></div>
@@ -245,7 +243,6 @@ h2{font-size:clamp(32px,5.1vw,84px)}
     <div class="body">
       <div>
         <h2 class="in">업데이트 요청에 함흥차사,<br><span class="hl-coral">저는 못 참습니다.</span></h2>
-        <p class="lead in">수정 하나 부탁하면 소식 불통인 업체와는 일 못합니다. 필요한 건 <strong>그날 저녁 제가 직접</strong> 개발합니다. 직원은 정시 퇴근, 대표는 코딩. 의료진 말을 찰떡같이 알아듣는 대표라서 가능한 일입니다.</p>
       </div>
       <div class="side cadence">
         <div class="cal in" aria-label="한 달 업데이트 캘린더, 주 2회 표시">
@@ -270,15 +267,14 @@ h2{font-size:clamp(32px,5.1vw,84px)}
     <div class="body">
       <div>
         <h2 class="in"><span class="hl"><span data-count="20">0</span>%</span> 예산으로<br><span class="hl"><span data-count="20">0</span>%</span> 의료진의<br>생산성을 높이자</h2>
-        <p class="lead in">전체 의료진이 바로 적응하진 못합니다. 초기엔 <strong>20% 의료진</strong>을 타겟으로 AX를 시작하길 권합니다. 어차피 100%를 만족시키는 솔루션은 없습니다. 우리 병원 EMR, 만족하시나요?</p>
         <div class="twin">
-          <div class="box emr in"><h3>EMR</h3><p>하나만 고를 수 있다. 누군가는 "괜찮다", 누군가는 "쓰레기".</p></div>
-          <div class="box ai in"><h3>AI 솔루션</h3><p>초기 도입 비용이 없다. 여러 개 써보고 의료진마다 마음에 드는 걸 고르면 된다.</p></div>
+          <div class="box emr in"><h3>EMR</h3><p>하나만 선택</p></div>
+          <div class="box ai in"><h3>AI 솔루션</h3><p>써보고 골라서 선택</p></div>
         </div>
       </div>
       <div class="side">
         <div class="grid100 in" id="grid100" aria-label="의료진 100명 중 20명 강조"></div>
-        <p class="in" style="text-align:center;margin:1em 0 0;font-size:.85em;color:var(--paper-dim)">이지케어텍 솔루션에서 닥터펜슬은 <strong style="color:var(--pencil)">디폴트</strong>로 설정되어 있지만,<br>다른 업체 솔루션도 선택해 쓸 수 있습니다.</p>
+        <p class="in" style="text-align:center;margin:1em 0 0;font-family:var(--font-mono);font-size:.75em;letter-spacing:.14em;color:var(--paper-dim)">의료진 100명 중 <strong style="color:var(--pencil)">20명</strong></p>
       </div>
     </div>
     <div class="foot"><span class="brand">DR. PENCIL</span><span class="co"><img src="assets/logo_kailab_white.png" alt="Kailab"><span>(주)카이랩</span></span></div>
@@ -290,7 +286,7 @@ h2{font-size:clamp(32px,5.1vw,84px)}
     <div class="body">
       <div>
         <h2 class="in">닥터펜슬은<br><span class="hl">업계 최고</span>를<br>지향합니다.</h2>
-        <p class="lead in">오늘 성능 지표는 장표에 넣지 않았습니다. <strong>써보고 비교해 주세요.</strong> 저도 의대 나온 사람이라, 2등하고는 못 참습니다.</p>
+        <p class="lead in">써보고 비교해 주세요.</p>
       </div>
       <div class="side one in" aria-hidden="true">
         <div class="cross"></div>
@@ -307,14 +303,12 @@ h2{font-size:clamp(32px,5.1vw,84px)}
     <div class="body">
       <div>
         <h2 class="in">만족하는 의료진은<br>저한테 <span class="hl">절을 하십니다.</span></h2>
-        <p class="lead in">이렇게 좋은 솔루션을 본인 임기 중에 만들어줘서 고맙다고요. 투자하고 싶다는 분도 계십니다.</p>
-        <div class="roi in"><b>가장 확실한 ROI.</b> 여러 대형병원에서 의료진이 <b>본인 돈을 내고</b> 쓰고 계십니다. 피 같은 자기 돈을 들여 쓴다는 것만큼 확실한 증거가 또 있을까요.</div>
       </div>
       <div class="side quotes">
-        <div class="q in"><p>만성적이던 손목 통증이 사라졌어요.</p><span>대학병원 교수</span></div>
-        <div class="q in"><p>환자와 눈을 마주치고 대화해 본 게 얼마만인지 모르겠습니다.</p><span>외래 진료 의료진</span></div>
-        <div class="q in"><p>하루 종일 진료하고 난 뒤의 피로감이 정말 다릅니다.</p><span>대학병원 교수</span></div>
-        <div class="q in"><p>투자하고 싶습니다.</p><span>닥터펜슬 사용 의료진</span></div>
+        <div class="q in"><p>손목 통증</p></div>
+        <div class="q in"><p>환자와 눈맞춤</p></div>
+        <div class="q in"><p>진료 후 피로감</p></div>
+        <div class="q in"><p>자비로 사용 중</p></div>
       </div>
     </div>
     <div class="foot"><span class="brand">DR. PENCIL</span><span class="co"><img src="assets/logo_kailab_white.png" alt="Kailab"><span>(주)카이랩</span></span></div>
@@ -327,7 +321,6 @@ h2{font-size:clamp(32px,5.1vw,84px)}
       <div class="close-grid">
         <div>
           <h2 class="in">저는 이 사업으로<br>대박을 바라지 않습니다.</h2>
-          <p class="lead in">건양대병원 의생명연구원장으로 남부끄럽지 않은 월급을 받습니다. (주)카이랩에서는 직원들 월급 잘 주고, <strong>동료 의료진을 돕는 보람</strong>이면 충분합니다.</p>
         </div>
         <div class="sig in">
           <b>김종엽</b>
