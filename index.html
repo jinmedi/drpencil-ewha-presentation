@@ -64,6 +64,10 @@ h2{font-size:clamp(32px,5.1vw,84px)}
 .lead strong{color:var(--paper);font-weight:500}
 .foot{display:flex;justify-content:space-between;align-items:center;font-family:var(--font-mono);font-size:.7em;color:var(--paper-dim);letter-spacing:.08em}
 .foot .brand{color:var(--pencil)}
+.foot .co{display:flex;align-items:center;gap:.8em}
+.foot .co img{height:1.6em;width:auto;opacity:.85}
+.sig img{display:block;height:2.6em;width:auto;margin:.7em 0 0 auto;opacity:.95}
+.end-logo{display:block;height:clamp(40px,5vh,60px);width:auto;margin:1.6em auto 0;opacity:.9}
 
 /* staged reveal */
 .slide .in{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
@@ -208,13 +212,14 @@ h2{font-size:clamp(32px,5.1vw,84px)}
         <h1 class="in">의료진의 손을<br><span class="hl">자유롭게.</span></h1>
         <p class="sub in">AI 진료 기록 솔루션 <strong style="color:var(--paper);font-weight:700">닥터펜슬</strong>을 소개합니다.</p>
         <p class="lead in">의사가 직접 만들고, 의사가 직접 고치는 솔루션. 오늘은 숫자 대신 이야기를 가져왔습니다.</p>
+        <p class="in" style="margin:.4em 0 0;font-family:var(--font-mono);font-size:.78em;letter-spacing:.14em;color:var(--pencil)">(주)카이랩 대표 · 김종엽</p>
       </div>
       <div class="side pencil-art in" aria-hidden="true">
         <div class="pencil"><i class="eraser"></i><i class="ferrule"></i><i class="shaft"></i><i class="wood"></i><i class="lead-tip"></i></div>
         <div class="stroke"></div>
       </div>
     </div>
-    <div class="foot"><span class="brand">DR. PENCIL</span><span>(주)카이랩 · KAILAB</span></div>
+    <div class="foot"><span class="brand">DR. PENCIL</span><span class="co"><img src="assets/logo_kailab_white.png" alt="Kailab"><span>(주)카이랩</span></span></div>
   </section>
 
   <!-- 2. 왜 직접 만들었나 -->
@@ -231,7 +236,7 @@ h2{font-size:clamp(32px,5.1vw,84px)}
         <div class="rung pick in"><span class="tag">OPTION C · 선택</span><span class="name">자체개발<small>가장 비싸고, 가장 눈물났던 길</small></span><span class="bar"><i></i></span></div>
       </div>
     </div>
-    <div class="foot"><span class="brand">DR. PENCIL</span><span>(주)카이랩 · KAILAB</span></div>
+    <div class="foot"><span class="brand">DR. PENCIL</span><span class="co"><img src="assets/logo_kailab_white.png" alt="Kailab"><span>(주)카이랩</span></span></div>
   </section>
 
   <!-- 3. 업데이트 속도 -->
@@ -256,7 +261,7 @@ h2{font-size:clamp(32px,5.1vw,84px)}
         <p class="in" style="margin:0;font-family:var(--font-mono);font-size:.75em;letter-spacing:.14em;color:var(--pencil)">SLOGAN · 업계에서 가장 빠른 업데이트</p>
       </div>
     </div>
-    <div class="foot"><span class="brand">DR. PENCIL</span><span>(주)카이랩 · KAILAB</span></div>
+    <div class="foot"><span class="brand">DR. PENCIL</span><span class="co"><img src="assets/logo_kailab_white.png" alt="Kailab"><span>(주)카이랩</span></span></div>
   </section>
 
   <!-- 4. 20 / 20 -->
@@ -276,7 +281,7 @@ h2{font-size:clamp(32px,5.1vw,84px)}
         <p class="in" style="text-align:center;margin:1em 0 0;font-size:.85em;color:var(--paper-dim)">이지케어텍 솔루션에서 닥터펜슬은 <strong style="color:var(--pencil)">디폴트</strong>로 설정되어 있지만,<br>다른 업체 솔루션도 선택해 쓸 수 있습니다.</p>
       </div>
     </div>
-    <div class="foot"><span class="brand">DR. PENCIL</span><span>(주)카이랩 · KAILAB</span></div>
+    <div class="foot"><span class="brand">DR. PENCIL</span><span class="co"><img src="assets/logo_kailab_white.png" alt="Kailab"><span>(주)카이랩</span></span></div>
   </section>
 
   <!-- 5. 업계 최고 -->
@@ -293,7 +298,7 @@ h2{font-size:clamp(32px,5.1vw,84px)}
         <b>1</b>
       </div>
     </div>
-    <div class="foot"><span class="brand">DR. PENCIL</span><span>(주)카이랩 · KAILAB</span></div>
+    <div class="foot"><span class="brand">DR. PENCIL</span><span class="co"><img src="assets/logo_kailab_white.png" alt="Kailab"><span>(주)카이랩</span></span></div>
   </section>
 
   <!-- 6. 의료진의 반응 -->
@@ -312,7 +317,7 @@ h2{font-size:clamp(32px,5.1vw,84px)}
         <div class="q in"><p>투자하고 싶습니다.</p><span>닥터펜슬 사용 의료진</span></div>
       </div>
     </div>
-    <div class="foot"><span class="brand">DR. PENCIL</span><span>(주)카이랩 · KAILAB</span></div>
+    <div class="foot"><span class="brand">DR. PENCIL</span><span class="co"><img src="assets/logo_kailab_white.png" alt="Kailab"><span>(주)카이랩</span></span></div>
   </section>
 
   <!-- 7. 마무리 -->
@@ -325,13 +330,14 @@ h2{font-size:clamp(32px,5.1vw,84px)}
           <p class="lead in">건양대병원 의생명연구원장으로 남부끄럽지 않은 월급을 받습니다. (주)카이랩에서는 직원들 월급 잘 주고, <strong>동료 의료진을 돕는 보람</strong>이면 충분합니다.</p>
         </div>
         <div class="sig in">
-          <b>닥터펜슬 개발자 · (주)카이랩 대표</b>
+          <b>김종엽</b>
+          (주)카이랩 대표 · 닥터펜슬 개발자<br>
           건양대병원 의생명연구원장
-          <div class="co">KAILAB · DR. PENCIL</div>
+          <img src="assets/logo_kailab_white.png" alt="Kailab">
         </div>
       </div>
     </div>
-    <div class="foot"><span class="brand">DR. PENCIL</span><span>(주)카이랩 · KAILAB</span></div>
+    <div class="foot"><span class="brand">DR. PENCIL</span><span class="co"><img src="assets/logo_kailab_white.png" alt="Kailab"><span>(주)카이랩</span></span></div>
   </section>
 
   <!-- 8. 끝 -->
@@ -341,9 +347,10 @@ h2{font-size:clamp(32px,5.1vw,84px)}
       <div style="text-align:center">
         <h1 class="in">이화의료원의<br>동료 의료진분들께<br><span class="hl">닥터펜슬이 도움이 되길</span><br>바랍니다.</h1>
         <p class="lead in" style="margin-inline:auto;text-align:center">감사합니다. 질문은 언제든 환영합니다.</p>
+        <img class="end-logo in" src="assets/logo_kailab_white.png" alt="Kailab">
       </div>
     </div>
-    <div class="foot"><span class="brand">DR. PENCIL</span><span>(주)카이랩 · KAILAB</span></div>
+    <div class="foot"><span class="brand">DR. PENCIL</span><span class="co"><img src="assets/logo_kailab_white.png" alt="Kailab"><span>(주)카이랩</span></span></div>
   </section>
 
 </main>

@@ -5,7 +5,7 @@
 ## 구성
 
 - `index.html` — 발표 슬라이드 (단일 HTML 파일, 브라우저에서 바로 열기)
-- `assets/` — 이미지, 폰트 등 정적 리소스
+- `assets/` — 카이랩 로고 (`logo_kailab.png` 원본, `logo_kailab_white.png` 다크 배경용)
 
 ## 실행
 
